@@ -66,7 +66,7 @@ void setDataDir() {
     	path = "";
     }
 
-    path += "/Tritium_btc";
+    path += "/Tritium/Tritium_btc";
 #else
     char* pszHome = getenv("HOME");
     if (pszHome == nullptr || strlen(pszHome) == 0)
@@ -75,10 +75,10 @@ void setDataDir() {
         path = pszHome;
 #ifdef MAC_OSX
     // Mac
-    path += "/Library/Application Support/Tritium_btc";
+    path += "/Library/Application Support/Tritium/Tritium_btc";
 #else
     // Unix
-    path += "/.tritium_btc";
+    path += "/.tritium/tritium_btc";
 #endif
 #endif
 
